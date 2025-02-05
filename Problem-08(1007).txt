@@ -1,0 +1,18 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+       Scanner i=new Scanner(System.in);
+         int A=i.nextInt();
+         int B=i.nextInt();
+         int C=i.nextInt();
+         int D=i.nextInt();
+         
+         System.out.printf("DIFERENCA = %d\n",(A*B-C*D));
+         i.close();
+ 
+    }
+ 
+}
