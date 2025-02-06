@@ -1,0 +1,17 @@
+import java.io.IOException;
+import java.util.Scanner;
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+    Scanner i=new Scanner(System.in);
+    String seller_name=i.nextLine();
+    double salary=i.nextFloat();
+    double sold_amount=i.nextFloat();
+    
+    double comission=sold_amount*0.15;
+    
+    System.out.printf("TOTAL = R$ %.2f\n",salary+comission);
+    i.close();
+    }
+}
