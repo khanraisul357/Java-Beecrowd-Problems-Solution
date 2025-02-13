@@ -1,0 +1,59 @@
+//Problem 01-(1048)
+#include <stdio.h>
+
+int main() {
+float salary,new_s,earned_m;
+
+scanf("%f",&salary);
+
+//salary range (0-400.00)
+if(salary>=0.00 && salary<=400.00){
+
+  new_s=salary+(salary*15/100);
+  earned_m=salary*15/100;
+
+    printf("Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 15 %%\n",new_s,earned_m);
+
+}
+
+//salary range (400.01-800.00)
+else if(salary>=400.01 && salary<=800.00){
+
+  new_s=salary+(salary*12/100);
+  earned_m=salary*12/100;
+
+    printf("Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 12 %%\n",new_s,earned_m);
+
+}
+
+//salary range (800.01-1200.00)
+else if(salary>=800.01 && salary<=1200.00){
+
+  new_s=salary+(salary*10/100);
+  earned_m=salary*10/100;
+
+    printf("Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 10 %%\n",new_s,earned_m);
+
+}
+
+//salary range (1200.01-2000.00)
+else if(salary>=1200.01 && salary<=2000.00){
+
+  new_s=salary+(salary*7/100);
+  earned_m=salary*7/100;
+
+    printf("Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 7 %%\n",new_s,earned_m);
+
+}
+
+//salary range (above 2000.00)
+else if(salary>2000.00){
+
+  new_s=salary+(salary*4/100);
+  earned_m=salary*4/100;
+
+    printf("Novo salario: %.2f\nReajuste ganho: %.2f\nEm percentual: 4 %%\n",new_s,earned_m);
+
+}
+return 0;
+}

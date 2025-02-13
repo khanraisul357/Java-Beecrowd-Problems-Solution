@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+float S,t;
+
+
+scanf("%f",&S);
+
+if(S>=0.00 && S<=2000.00){
+  printf("Isento\n");
+}
+
+else if(S>=2000.01 && S<=3000.00){
+  t=(S-2000.00)*8/100;
+  printf("R$ %.2f\n",t);
+}
+
+else if(S>=3000.01 && S<=4500.00){
+
+float left_amount=(S-3000.00);
+t=(1000*8/100)+(left_amount*18/100);
+  printf("R$ %.2f\n",t);
+
+}
+
+else if(S>4500.00){
+  float left_amount=(S-4500.00);
+  t=(1000*8/100)+(1500*18/100)+(left_amount*28/100);
+  printf("R$ %.2f\n",t);
+}
+
+return 0;
+
+}
