@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ 
+
+public class Main {
+ 
+    public static void main(String[] args){
+ 
+        Scanner i=new Scanner(System.in);
+    	 int A=i.nextInt();
+    	 int B=i.nextInt();
+    	 int C=i.nextInt();
+    	 
+    	 int Largest_between_AB=(A+B+Math.abs(A-B))/2;
+    	 
+    	 int Largest=(Largest_between_AB+C+Math.abs(Largest_between_AB-C))/2;
+    	 
+     
+         System.out.printf("%d eh o maior\n",Largest);
+         
+         i.close();
+ 
+    }
+ 
+}
