@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args){
+ 
+        Scanner i=new Scanner(System.in);
+         int code1=i.nextInt();
+         int units1=i.nextInt();
+         float price_per_unit1=i.nextFloat();
+         
+         int code2=i.nextInt();
+         int units2=i.nextInt();
+         float price_per_unit2=i.nextFloat();
+         
+         
+         float paid_amount= (units1*price_per_unit1)+(units2*price_per_unit2);
+         
+         System.out.printf("VALOR A PAGAR: R$ %.2f\n",paid_amount);
+         i.close();
+ 
+    }
+ 
+}
