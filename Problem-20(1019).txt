@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+		
+		int N=input.nextInt();	
+		int note;
+		
+		int hour=N/3600;//second to hour
+		N=N-(hour*3600);
+		    
+
+		int minute=N/60;//remaining second to minute
+		N=N-(minute*60);
+			
+		int second=N;
+		
+		System.out.printf("%d:%d:%d\n",hour,minute,second);
+			
+		input.close();
+    }
+ 
+}
