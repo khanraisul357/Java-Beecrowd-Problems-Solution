@@ -1,0 +1,69 @@
+import java.util.Scanner;
+ 
+public class Main {
+ 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+		double N = input.nextDouble();	
+		int note;
+		double coin;
+
+		System.out.println("NOTAS:");
+
+		note = (int)N / 100;
+		System.out.printf("%d nota(s) de R$ 100.00\n", note);
+		N=N-(note*100);
+
+		note = (int)N / 50;
+		System.out.printf("%d nota(s) de R$ 50.00\n", note);
+		N=N-(note*50);
+
+		note = (int)N / 20;
+		System.out.printf("%d nota(s) de R$ 20.00\n", note);
+		N=N-(note*20);
+
+		note = (int)N / 10;
+		System.out.printf("%d nota(s) de R$ 10.00\n", note);
+		N=N-(note*10);
+
+		note = (int)N / 5;
+		System.out.printf("%d nota(s) de R$ 5.00\n", note);
+		N=N-(note*5);
+
+		note = (int)N / 2;
+		System.out.printf("%d nota(s) de R$ 2.00\n", note);
+		N=N-(note*2);
+		
+		System.out.println("MOEDAS:");
+
+		coin = N / 1;
+		System.out.printf("%d moeda(s) de R$ 1.00\n",(int)coin);
+		N=N-((int)coin*1);
+		
+		coin= N /0.50;
+		System.out.printf("%d moeda(s) de R$ 0.50\n",(int)coin);
+		N=N-((int)coin*0.50);
+		
+		coin= N /0.25;
+		System.out.printf("%d moeda(s) de R$ 0.25\n",(int)coin);
+		N=N-((int)coin*0.25);
+		
+		coin= N /0.10;
+		System.out.printf("%d moeda(s) de R$ 0.10\n",(int)coin);
+		N=N-((int)coin*0.10);
+		
+		coin= N /0.05;
+		System.out.printf("%d moeda(s) de R$ 0.05\n",(int)coin);
+		N=N-((int)coin*0.05);
+		
+		coin= N /0.01;
+		System.out.printf("%d moeda(s) de R$ 0.01\n",Math.round(coin));
+		
+
+		input.close();	
+
+		input.close();	
+    }
+ 
+}
